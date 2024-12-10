@@ -579,7 +579,7 @@ h1 {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
+    align-items: center;
     justify-content: center;
 }
   
@@ -720,82 +720,71 @@ h1 {
 /* ========================= */
 /* Catering & Events Page */
 /* ========================= */
-
-/* Custom Button Style */
 .btn-custom {
-    background-color: #8C2B32;    /* Set button color */
-    color: white;                 /* Set text color */
-    border: none;                 /* Remove border */
-    padding: 0.5rem 1rem;         /* Adjust padding */
-    font-size: 16px;              /* Adjust font size */
-    border-radius: 0.25rem;       /* Optional: adjust border radius */
-    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover */
+    background-color: var(--deep-red);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Button Hover Effect */
 .btn-custom:hover {
-    background-color: #721F28;    /* Darker color on hover */
-    color: #B47B6B;               /* Lighter color for text on hover */
+    background-color: var(--burgundy-red);
+    color: var(--warm-taupe);
 }
 
-/* Optional: Remove focus outline */
 .btn-custom:focus {
     outline: none;
 }
 
-/* Custom CSS for Hero Section */
 #catering-hero .catering-image-container {
-    max-height: 30vh;               /* Keep image height limited */
+    max-height: 30vh;
 }
 
-/* Custom CSS for Heading */
 #catering-hero .hero-heading {
-    font-size: 2.2rem;  /* Adjust as needed */
+    font-size: 2.2rem;
 }
 
-/* Custom CSS for Paragraph */
 #catering-hero .hero-paragraph {
-    font-size: 1.1rem;  /* Adjust as needed */
+    font-size: 1.1rem;
 }
 
-/* === Events Space Styling === */
 .event-space-heading {
     background-color: var(--olive-green);
 }
 
 /* === Inquiry Form Styling === */
-/* Custom Button Styles */
 .inquiry-form .container {
-    max-width: 800px; /* Limit the maximum width of the form */
-    margin: 0 auto; /* Centers the container */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .custom-btn {
-    background-color: #8C2B32; /* Default button color */
-    color: white; /* White text */
-    border: none; /* No border */
-    padding: 5px 15px; /* Reduced padding for a smaller button */
-    font-size: 14px; /* Smaller font size */
-    border-radius: 5px; /* Optional: rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+    background-color: var(--deep-red);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .custom-btn:hover {
-    background-color: #721F28; /* Hover background color */
-    color: #B47B6B; /* Hover text color */
+    background-color: var(--burgundy-red);
+    color: var(--warm-taupe);
 }
 
 .custom-btn:focus {
-    background-color: #721F28; /* Focus background color */
-    color: #B47B6B; /* Focus text color */
-    box-shadow: none; /* Remove blue focus outline */
+    background-color: var(--burgundy-red);
+    color: var(--warm-taupe);
+    box-shadow: none;
 }
 
 /* ========================= */
 /* Online Reservation Page */
 /* ========================= */
-
-/* Banner Section */
 .banner-container {
     height: 50vh;
     overflow: hidden;
@@ -808,7 +797,6 @@ h1 {
     transform: rotate(-180deg) scale(1.2);
 }
 
-/* Form Styling */
 form .form-label {
     font-weight: bold;
 }
@@ -824,33 +812,24 @@ form button[type="submit"] {
     color: var(--white);
 }
 
-
-
 /* ========================= */
 /* Media Queries */
 /* ========================= */
 
 /* === Home page  */
-/* For medium and larger screens, align items to the left */
 @media (min-width: 1024px) {
     .footer-gridRow .col-md-3 ul {
-        align-items: flex-start; /* Align the items to the left */
-        text-align: left; /* Ensure text is aligned to the left */
+        align-items: flex-start;
+        text-align: left;
     }
 }
 
 @media (min-width: 1728px) {
     .footer-gridRow .col-md-3 ul {
-        align-items: flex-start; /* Align the items to the left */
-        text-align: left; /* Ensure text is aligned to the left */
+        align-items: flex-start;
+        text-align: left;
     }
 }
-
-
-
-
-
-
 
 
   

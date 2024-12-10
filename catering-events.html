@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Palette | MTM6201 Final - Marco Chan</title>
+    <!-- Link to reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Link to bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Link to animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link to style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/bc97a8c4ab.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- ========================= -->
+<!-- For Catering & Events Page -->
+<!-- ========================= -->
+<body class="page-catering-events">
+
+    <!-- === Skip links === -->
+    <a href="#catering-menu" class="skip-link">Skip to catering menu</a>
+    <a href="#events-info" class="skip-link">Skip to events spaces info</a>
+    <a href="#inquiry" class="skip-link">Skip to inquiry form</a>
+
+    <!-- ========================= -->
+    <!-- Header Section -->
+    <!-- ========================= -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_color.png" alt="Image of logo">
+                </a>
+                <!-- === Hamburger menu === -->
+                <button class="navbar-toggler pushbar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- === Navbar (Bootstrap) === -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catering-events.html">Catering & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="online-reservation.html">Online Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================= -->
+    <!-- Hero Section -->
+    <!-- ========================= -->
+    <div id="catering-hero" class="px-4 pt-5 my-0 text-center border-bottom">
+        <h1 class="display-4 fw-bold hero-heading">Plan Your Perfect Event with Us</h1>
+
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 hero-paragraph">
+                Whether it's an intimate gathering or a grand celebration, our catering services are tailored to meet your unique needs. Let us help bring your event to life with delicious food and seamless service.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href="#inquiry-form" class="btn btn-custom btn-lg px-4 me-sm-3">Plan Your Event</a>
+            </div>
+        </div>
+      
+        <div class="overflow-hidden catering-image-container">
+            <div class="container px-5">
+                <img src="images/catering_image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Catering Event Image" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+    
+    <!-- ========================= -->
+    <!-- Catering Menu Section -->
+    <!-- ========================= -->
+
+    <!-- === First Menu - Birthday Party Catering (Image on Left) === -->
+    <section id="catering-menu">
+        <h2 class="text-center my-5 fs-4">Catering Menu</h2>
+
+        <div class="container mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-12 mb-4 mb-md-0">
+                    <div class="img-container">
+                        <img src="images/catering_menu_1.jpg" class="img-fluid" alt="Catering Menu - Birthday Party Catering">
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-12">
+                    <h2 class="display-5 fs-4 fw-bold">Birthday Party Catering</h2>
+                    <p class="lead fs-6">Celebrate in style with our vibrant and delicious vegan birthday party menu. Perfect for a fun, flavorful celebration, each dish is crafted with love to ensure your guests leave satisfied and happy!</p>
+                    <p><strong>Serves 10-15 people</strong></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Spring Rolls:</strong></p>
+                            <p class="fs-6">Crispy rolls filled with fresh vegetables, served with a tangy dipping sauce.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Stuffed Mushrooms:</strong></p>
+                            <p class="fs-6">Savory mushrooms stuffed with herbed vegetables and breadcrumbs.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Quinoa Salad:</strong></p>
+                            <p class="fs-6">Refreshing quinoa mixed with veggies, topped with a tangy vinaigrette.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Sweet Potato Fries:</strong></p>
+                            <p class="fs-6">Crispy, golden fries made from sweet potatoes, seasoned with sea salt.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Tacos:</strong></p>
+                            <p class="fs-6">Soft corn tortillas filled with spicy lentils, fresh veggies, and a zingy sauce.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Cupcakes:</strong></p>
+                            <p class="fs-6">Soft and fluffy cupcakes, topped with a smooth dairy-free frosting.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Second Menu - Company Party Catering (Image on Right) === -->
+    <section>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-9 col-12 mb-4 mb-md-0 order-md-1 order-2">
+                    <h2 class="display-5 fs-4 fw-bold">Company Party Catering</h2>
+                    <p class="lead fs-6">Impress your colleagues with our wholesome and satisfying vegan company party menu. From savory starters to delicious desserts, each dish is crafted to leave a lasting impression while catering to various dietary preferences.</p>
+                    <p><strong>Serves 15-20 people</strong></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Plant Palette Burger:</strong></p>
+                            <p class="fs-6">A hearty, plant-based burger served with fresh toppings and vegan mayo.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Spicy Chickpea Hummus:</strong></p>
+                            <p class="fs-6">A flavorful twist on traditional hummus, served with pita and fresh veggies.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Creamy Cashew Alfredo Pasta:</strong></p>
+                            <p class="fs-6">Rich, creamy pasta in a dairy-free cashew-based sauce.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Grilled Veggie Skewers:</strong></p>
+                            <p class="fs-6">Skewers loaded with fresh, grilled vegetables and a smoky marinade.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Zucchini Fritters:</strong></p>
+                            <p class="fs-6">Crispy zucchini fritters served with a tangy dipping sauce.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Chocolate Mousse:</strong></p>
+                            <p class="fs-6">A velvety smooth chocolate mousse made from avocado and cacao.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12 order-md-2 order-1">
+                    <div class="img-container">
+                        <img src="images/catering_menu_2.jpg" class="img-fluid" alt="Catering Menu - Company Party Catering">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Third Menu - Casual Get-Together Catering (Image on Left) === -->
+    <section>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-12 mb-4 mb-md-0">
+                    <div class="img-container">
+                        <img src="images/catering_menu_1.jpg" class="img-fluid" alt="Catering Menu - Casual Get-Together Catering">
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-12">
+                    <h2 class="display-5 fs-4 fw-bold">Casual Get-Together Catering</h2>
+                    <p class="lead fs-6">Perfect for a small, intimate gathering, our casual get-together menu is full of vibrant, plant-based flavors. Simple, delicious, and easy to share, it's an excellent choice for casual parties and gatherings with friends or family.</p>
+                    <p><strong>Serves 6-8 people</strong></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Burrito Bowls:</strong></p>
+                            <p class="fs-6">A healthy bowl with rice, black beans, veggies, and avocado.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Spicy Lentil Soup:</strong></p>
+                            <p class="fs-6">A warming, spicy soup made with lentils, tomatoes, and fresh herbs.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Caesar Salad:</strong></p>
+                            <p class="fs-6">Crisp romaine lettuce with a tangy vegan Caesar dressing.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Chili:</strong></p>
+                            <p class="fs-6">Hearty, spiced chili made with beans, tomatoes, and vegan-friendly protein.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Sweet Potato Nachos:</strong></p>
+                            <p class="fs-6">Baked sweet potato slices topped with vegan cheese and jalapeños.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Fruit Tart:</strong></p>
+                            <p class="fs-6">A refreshing tart topped with seasonal fruits and a coconut cream base.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Fourth Menu - Wedding Catering (Image on Right) === -->
+    <section>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-9 col-12 mb-4 mb-md-0 order-md-1 order-2">
+                    <h2 class="display-5 fs-4 fw-bold">Wedding Catering</h2>
+                    <p class="lead fs-6">Our wedding catering menu is designed to make your big day even more special. Offering a refined selection of vegan dishes that are as elegant as they are delicious, it's the perfect way to celebrate love.</p>
+                    <p><strong>Serves 25-30 people</strong></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Mushroom Risotto:</strong></p>
+                            <p class="fs-6">A creamy, earthy risotto made with fresh mushrooms and plant-based ingredients.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Cauliflower Steaks:</strong></p>
+                            <p class="fs-6">Roasted cauliflower steaks served with a balsamic glaze and roasted garlic.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Stuffed Bell Peppers:</strong></p>
+                            <p class="fs-6">Bell peppers stuffed with quinoa, beans, and vegetables, baked to perfection.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Stuffed Grape Leaves:</strong></p>
+                            <p class="fs-6">Delicate grape leaves stuffed with rice, pine nuts, and fresh herbs.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Vegan Lemon Cheesecake:</strong></p>
+                            <p class="fs-6">A light and refreshing lemon cheesecake made with cashews and coconut milk.</p>
+                        </li>
+                        <li>
+                            <p class="fs-6 mb-1"><strong>Chocolate-Dipped Strawberries:</strong></p>
+                            <p class="fs-6">Fresh strawberries dipped in dark chocolate for a decadent dessert.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12 order-md-2 order-1">
+                    <div class="img-container">
+                        <img src="images/catering_menu_2.jpg" class="img-fluid" alt="Catering Menu - Wedding Catering">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Events Spaces Section -->
+    <!-- ========================= -->
+    <section id="events-info" class="events-spaces pt-0 py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Event Spaces</h2>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- === Main Event Hall === -->
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="images/events_space_1.jpg" class="img-fluid w-100" alt="Event Space - Main Event Hall">
+                        <h4 class="event-space-heading position-absolute bottom-0 start-0 text-white p-3 w-100 text-center">Main Event Hall</h4>
+                    </div>
+                </div>
+                
+                <!-- === Collaboration Zone === -->
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="images/events_space_2.jpg" class="img-fluid w-100" alt="Event Space - Collaboration Zone">
+                        <h4 class="event-space-heading position-absolute bottom-0 start-0 text-white p-3 w-100 text-center">Collaboration Zone</h4>
+                    </div>
+                </div>
+                
+                <!-- === Private Meeting Area === -->
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="images/events_space_3.jpg" class="img-fluid w-100" alt="Event Space - Private Meeting Area">
+                        <h4 class="event-space-heading position-absolute bottom-0 start-0 text-white p-3 w-100 text-center">Private Meeting Area</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Inquiry Form Section -->
+    <!-- ========================= -->
+
+    <section id="inquiry" class="inquiry-form py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Inquiry Form</h2>
+            
+            <form>
+                <!-- === Name Field === -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                
+                <!-- === Email Field === -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                
+                <!-- === Phone Field === -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Your Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                
+                <!-- === Message Field === -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                
+                <!-- === Submit Button === -->
+                <div class="text-center">
+                    <button type="submit" class="btn custom-btn">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+    <div class="footer-container">
+        <footer class="footer custom-footer text-white text-center text-lg-start">
+            <div class="footer-gridContainer">
+                <div class="row footer-gridRow">
+
+                    <!-- === About Plant Palette === -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About Plant Palette</h5>
+                        <p>Plant Palette is Ottawa's premier plant-based restaurant, offering delicious, sustainable meals made from locally sourced ingredients. We celebrate vegetarian and vegan cuisine while supporting eco-friendly practices.</p>
+                    </div>
+            
+                    <!-- === Come Visit Us === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Come Visit Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span>Ottawa, ON, Canada</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>info@plantpalette.com</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>+1 (613) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- === Opening Hours === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening Hours</h5>
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>11 a.m. - 10 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>11 a.m. - 9 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sun:</td>
+                                    <td>11 a.m. - 8 p.m.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footer-background text-white text-center p-3 px-lg-5">
+                <div class="mb-3">
+                    <a class="text-white" href="index.html">Home</a> |
+                    <a class="text-white" href="menu.html">Menu</a> |
+                    <a class="text-white" href="catering-events.html">Catering & Events</a> |
+                    <a class="text-white" href="online-reservation.html">Online Reservation</a>
+                </div>
+                
+                <p class="mb-0">&copy;2024 Plant Palette. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================= -->
+    <!-- JavaScript Libraries -->
+    <!-- ========================= -->
+
+    <!-- === Link to Bootstrap JS === -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- === Links to jQery JS === -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

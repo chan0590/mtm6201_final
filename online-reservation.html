@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Palette | MTM6201 Final - Marco Chan</title>
+    <!-- Link to reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Link to bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Link to animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link to style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/bc97a8c4ab.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- ========================= -->
+<!-- For Online Reservation Page -->
+<!-- ========================= -->
+<body class="page-online-reservation">
+
+    <!-- === Skip links === -->
+    <a href="#reservation" class="skip-link">Skip to reservation form</a>
+    <a href="#map" class="skip-link">Skip to google map</a>
+    
+    <!-- ========================= -->
+    <!-- Header Section -->
+    <!-- ========================= -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_color.png" alt="Image of logo">
+                </a>
+                <!-- === Hamburger menu === -->
+                <button class="navbar-toggler pushbar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- === Navbar (Bootstrap) === -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catering-events.html">Catering & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="online-reservation.html">Online Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================= -->
+    <!-- Reservation Section -->
+    <!-- ========================= -->
+    
+    <section id="reservation" class="online-reservation">
+        <!-- === Banner === -->
+        <div class="banner-container position-relative text-center">
+            <img src="images/about_us_image_1.jpg" class="img-fluid banner-img" alt="Image for Online Reservation">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <h1 class="text-white fw-bold">RESERVE A SERVICE</h1>
+            </div>
+        </div>
+    
+        <!-- === Reservation Form === -->
+        <div class="container py-5" id="reservation-form">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center fw-bold mb-4">Book Your Reservation Online</h2>
+                    <p class="text-center text-muted mb-4">Reserve your table for lunch or dinner with ease. Enjoy a seamless dining experience at Plant Palette!</p>
+
+                    <div class="bg-white p-4 rounded shadow">
+                        <form>
+                            <!-- === Name Field === -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+    
+                            <!-- === Phone Number Field === -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+    
+                            <!-- === Email Field === -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+    
+                            <!-- === Date Field === -->
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+    
+                            <!-- === Time Fields === -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="start-time" class="form-label">Start Time</label>
+                                    <input type="time" class="form-control" id="start-time">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="end-time" class="form-label">End Time</label>
+                                    <input type="time" class="form-control" id="end-time">
+                                </div>
+                            </div>
+    
+                            <!-- === Service Type Field === -->
+                            <div class="mb-3">
+                                <label for="service-type" class="form-label">Service Type</label>
+                                <select class="form-select" id="service-type">
+                                    <option value="table">Book A Table</option>
+                                    <option value="event">Reserve For Events</option>
+                                </select>
+                            </div>
+    
+                            <!-- === Guests Field === -->
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Guests</label>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary" type="button" id="decrease-guests">-</button>
+                                    <input type="number" class="form-control text-center" id="guests" value="1" min="1">
+                                    <button class="btn btn-outline-secondary" type="button" id="increase-guests">+</button>
+                                </div>
+                            </div>
+    
+                            <!-- === Description Field === -->
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description / Special Instructions</label>
+                                <textarea class="form-control" id="description" rows="3" placeholder="Enter additional details"></textarea>
+                            </div>
+    
+                            <!-- === Submit Button === -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ========================= -->
+    <!-- Google map section -->
+    <!-- ========================= -->
+
+    <section id="map" class="google-map pt-0 pb-5">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-0">Find Us</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.958871121495!2d-75.75692959999999!3d45.349642499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0x77f83c36431520b9!2sAlgonquin%20College%20-%20Building%20H!5e0!3m2!1sen!2sca!4v1733622329149!5m2!1sen!2sca"
+                        class="border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+    <div class="footer-container">
+        <footer class="footer custom-footer text-white text-center text-lg-start">
+            <div class="footer-gridContainer">
+                <div class="row footer-gridRow">
+
+                    <!-- === About Plant Palette === -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About Plant Palette</h5>
+                        <p>Plant Palette is Ottawa's premier plant-based restaurant, offering delicious, sustainable meals made from locally sourced ingredients. We celebrate vegetarian and vegan cuisine while supporting eco-friendly practices.</p>
+                    </div>
+            
+                    <!-- === Come Visit Us === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Come Visit Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span>Ottawa, ON, Canada</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>info@plantpalette.com</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>+1 (613) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- === Opening Hours === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening Hours</h5>
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>11 a.m. - 10 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>11 a.m. - 9 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sun:</td>
+                                    <td>11 a.m. - 8 p.m.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footer-background text-white text-center p-3 px-lg-5">
+                <div class="mb-3">
+                    <a class="text-white" href="index.html">Home</a> |
+                    <a class="text-white" href="menu.html">Menu</a> |
+                    <a class="text-white" href="catering-events.html">Catering & Events</a> |
+                    <a class="text-white" href="online-reservation.html">Online Reservation</a>
+                </div>
+                
+                <p class="mb-0">&copy;2024 Plant Palette. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================= -->
+    <!-- JavaScript Libraries -->
+    <!-- ========================= -->
+
+    <!-- === Link to Bootstrap JS === -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- === Links to jQery JS === -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

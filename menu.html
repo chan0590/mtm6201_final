@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Palette | MTM6201 Final - Marco Chan</title>
+    <!-- Link to reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Link to bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Link to animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link to style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/bc97a8c4ab.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- ========================= -->
+<!-- For Menu Page -->
+<!-- ========================= -->
+<body class="page-menu">
+
+    <!-- === Skip links === -->
+    <a href="#sustainability-info" class="skip-link">Skip to sustainability info</a>
+    <a href="#menu-info" class="skip-link">Skip to menu</a>
+
+    <!-- ========================= -->
+    <!-- Header Section -->
+    <!-- ========================= -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_color.png" alt="Image of logo">
+                </a>
+                <!-- === Hamburger menu === -->
+                <button class="navbar-toggler pushbar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- === Navbar (Bootstrap) === -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catering-events.html">Catering & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="online-reservation.html">Online Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================= -->
+    <!-- Slider Section -->
+    <!-- ========================= -->
+    <section id="hero-slider" class="carousel slide p-0 m-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- === First slide === -->
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/seasonal_image_1.jpg" alt="Image of first slide">
+                <div class="carousel-caption d-flex justify-content-center align-items-center text-center">
+                    <div class="text-white">
+                        <h2 class="fw-bold">Jolly Feast</h2>
+                        <p>Santa's Vegan Pizza Extravaganza!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- === Second slide === -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/seasonal_image_2.jpg" alt="Image of second slide">
+                <div class="carousel-caption d-flex justify-content-center align-items-center text-center">
+                    <div class="text-white">
+                        <h2 class="fw-bold">Indulgent Joy</h2>
+                        <p>Savor the Magic of Christmas with Pain au Chocolat!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- === Third slide === -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/seasonal_image_3.jpg" alt="Image of third slide">
+                <div class="carousel-caption d-flex justify-content-center align-items-center text-center">
+                    <div class="text-white">
+                        <h2 class="fw-bold">Festive Spring Rolls</h2>
+                        <p>A Transparent Delight for Your Holiday Table!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- === Previous and Next arrow === -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- ========================= -->
+    <!--  Sourcing Info Section -->
+    <!-- ========================= -->
+    <section id="sustainability-info" class="py-3 pt-4">
+        <div class="container">
+            <h2 class="text-center mb-4 fs-5 fw-bold">SUSTAINABILITY & SOURCING INFO</h2>
+            <div class="row">
+                <!-- === Card 1 - Sustainable & Eco-Friendly Practices === -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="images/sourcing_image_1.jpg" class="card-img-top" alt="Image of Sustainable & Eco-Friendly Practices">
+                        <div class="card-body text-center text-white">
+                            <h6 class="card-title fs-6 fw-bold">Sustainable & Eco-Friendly Practices</h6>
+                            <p class="card-text">We prioritize methods that reduce waste and minimize environmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- === Card 2 - Local Partnerships & Community Support === -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="images/sourcing_image_2.jpg" class="card-img-top" alt="Image of Local Partnerships & Community Support">
+                        <div class="card-body text-center text-white">
+                            <h6 class="card-title fs-6 fw-bold">Local Partnerships & Community Support</h6>
+                            <p class="card-text">Our dishes feature ingredients from trusted local farmers and suppliers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- === Card 3 - Fresh & Seasonal Ingredients === -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="images/sourcing_image_3.jpg" class="card-img-top" alt="Image of Fresh & Seasonal Ingredients">
+                        <div class="card-body text-center text-white">
+                            <h6 class="card-title fs-6 fw-bold">Fresh & Seasonal Ingredients</h6>
+                            <p class="card-text">We craft our menu using the freshest ingredients available each season.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- === Card 4 - Certified Organic Produce === -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="images/sourcing_image_4.jpg" class="card-img-top" alt="Image of Certified Organic Produce">
+                        <div class="card-body text-center text-white">
+                            <h6 class="card-title fs-6 fw-bold">Certified Organic Produce</h6>
+                            <p class="card-text">All our produce is certified organic, ensuring quality and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!--  MENU SECTION -->
+    <!-- ========================= -->
+
+    <section id="menu-info" class="pt-0 py-2">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+            <div class="row">
+                <!-- === Vegetable Spring Rolls === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_01.jpg" class="card-img-top img-fluid" alt="Vegetable Spring Rolls">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Vegetable Spring Rolls</h5>
+                            <p class="card-text">Crispy, golden-brown rolls filled with a mix of fresh vegetables, served with a tangy dipping sauce.</p>
+                            <p class="price text-white">$9.00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- === Spicy Chickpea Hummus === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_02.jpg" class="card-img-top img-fluid" alt="Spicy Chickpea Hummus">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Spicy Chickpea Hummus</h5>
+                            <p class="card-text">A zesty twist on classic hummus, blended with chickpeas, tahini, and a kick of spice.</p>
+                            <p class="price text-white">$8.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Stuffed Mushrooms === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_03.jpg" class="card-img-top img-fluid" alt="Stuffed Mushrooms">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Stuffed Mushrooms</h5>
+                            <p class="card-text">Savory mushrooms filled with a flavorful mixture of herbs, vegetables, and breadcrumbs.</p>
+                            <p class="price text-white">$10.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Plant Palette Burger === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_04.jpg" class="card-img-top img-fluid" alt="Plant Palette Burger">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Plant Palette Burger</h5>
+                            <p class="card-text">A delicious plant-based burger, served with fresh toppings and a tangy vegan sauce.</p>
+                            <p class="price text-white">$14.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Creamy Cashew Alfredo Pasta === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_05.jpg" class="card-img-top img-fluid" alt="Creamy Cashew Alfredo Pasta">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Creamy Cashew Alfredo Pasta</h5>
+                            <p class="card-text">Rich, creamy pasta in a dairy-free cashew Alfredo sauce, perfect for a satisfying meal.</p>
+                            <p class="price text-white">$16.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Spicy Lentil Tacos === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_06.jpg" class="card-img-top img-fluid" alt="Spicy Lentil Tacos">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Spicy Lentil Tacos</h5>
+                            <p class="card-text">Soft tacos filled with spicy lentils, topped with fresh vegetables and a zingy dressing.</p>
+                            <p class="price text-white">$12.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Quinoa Salad === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_07.jpg" class="card-img-top img-fluid" alt="Quinoa Salad">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Quinoa Salad</h5>
+                            <p class="card-text">A light, refreshing salad with quinoa, fresh veggies, and a tangy vinaigrette dressing.</p>
+                            <p class="price text-white">$6.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Sweet Potato Fries === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_08.jpg" class="card-img-top img-fluid" alt="Sweet Potato Fries">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Sweet Potato Fries</h5>
+                            <p class="card-text">Crispy, golden fries made from sweet potatoes, seasoned to perfection.</p>
+                            <p class="price text-white">$5.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Sautéed Seasonal Greens === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_09.jpg" class="card-img-top img-fluid" alt="Sautéed Seasonal Greens">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Sautéed Seasonal Greens</h5>
+                            <p class="card-text">Fresh, seasonal greens sautéed with olive oil and garlic for a simple, flavorful side dish.</p>
+                            <p class="price text-white">$7.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Organic Herbal Iced Tea === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_10.jpg" class="card-img-top img-fluid" alt="Organic Herbal Iced Tea">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Organic Herbal Iced Tea</h5>
+                            <p class="card-text">A refreshing blend of organic herbs, served chilled for a calming drink.</p>
+                            <p class="price text-white">$8.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Craft Local Beer & Wine === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_11.jpg" class="card-img-top img-fluid" alt="Craft Local Beer & Wine">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Craft Local Beer & Wine</h5>
+                            <p class="card-text">Enjoy a selection of local craft beers and wines.</p>
+                            <p class="price text-white">$10.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Organic Coffee === -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 border border-1 rounded-3">
+                        <img src="images/menu_dishes_12.jpg" class="card-img-top img-fluid" alt="Organic Coffee">
+                        <div class="card-body text-start text-white">
+                            <h5 class="card-title fs-6 fw-bold">Organic Coffee</h5>
+                            <p class="card-text">A rich, aromatic coffee made from organic beans, perfect for any time of day.</p>
+                            <p class="price text-white">$9.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!--  Testimonials Section -->
+    <!-- ========================= -->
+    <section>
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-12">
+                    <h2 class="my-4">What Our Customers Say</h2>
+
+                    <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- Testimonial 1 -->
+                            <div class="carousel-item active">
+                                <div class="testimonial-item d-flex flex-column justify-content-center" style="height: 300px;">
+                                    <p class="lead font-italic mx-4 mx-md-5">
+                                        "The Plant Palette Burger was amazing—hands down the best vegan burger I've had!"
+                                    </p>
+                                    <div class="mt-4 mb-4">
+                                        <img src="images/feedback_01.jpg" class="rounded-circle img-fluid shadow-1-strong" alt="image of client 1" width="100" height="100">
+                                    </div>
+                                    <p class="text-muted mb-0">- Sarah M.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 2 -->
+                            <div class="carousel-item">
+                                <div class="testimonial-item d-flex flex-column justify-content-center" style="height: 300px;">
+                                    <p class="lead font-italic mx-4 mx-md-5">
+                                        "The Spicy Chickpea Hummus and Quinoa Salad were delicious. I'll be back for sure!"
+                                    </p>
+                                    <div class="mt-4 mb-4">
+                                        <img src="images/feedback_02.jpg" class="rounded-circle img-fluid shadow-1-strong" alt="image of client 2" width="100" height="100">
+                                    </div>
+                                    <p class="text-muted mb-0">- Lily S.</p>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="carousel-item">
+                                <div class="testimonial-item d-flex flex-column justify-content-center" style="height: 300px;">
+                                    <p class="lead font-italic mx-4 mx-md-5">
+                                        "Loved the Sweet Potato Fries and Cashew Alfredo Pasta—perfect plant-based comfort food!"
+                                    </p>
+                                    <div class="mt-4 mb-4">
+                                        <img src="images/feedback_03.jpg" class="rounded-circle img-fluid shadow-1-strong" alt="image of client 3" width="100" height="100">
+                                    </div>
+                                    <p class="text-muted mb-0">- Emily R.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- === Carousel Controls === -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+    <div class="footer-container">
+        <footer class="footer custom-footer text-white text-center text-lg-start">
+            <div class="footer-gridContainer">
+                <div class="row footer-gridRow">
+
+                    <!-- === About Plant Palette === -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About Plant Palette</h5>
+                        <p>Plant Palette is Ottawa's premier plant-based restaurant, offering delicious, sustainable meals made from locally sourced ingredients. We celebrate vegetarian and vegan cuisine while supporting eco-friendly practices.</p>
+                    </div>
+            
+                    <!-- === Come Visit Us === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Come Visit Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span>Ottawa, ON, Canada</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>info@plantpalette.com</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>+1 (613) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- === Opening Hours === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening Hours</h5>
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>11 a.m. - 10 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>11 a.m. - 9 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sun:</td>
+                                    <td>11 a.m. - 8 p.m.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footer-background text-white text-center p-3 px-lg-5">
+                <div class="mb-3">
+                    <a class="text-white" href="index.html">Home</a> |
+                    <a class="text-white" href="menu.html">Menu</a> |
+                    <a class="text-white" href="catering-events.html">Catering & Events</a> |
+                    <a class="text-white" href="online-reservation.html">Online Reservation</a>
+                </div>
+                
+                <p class="mb-0">&copy;2024 Plant Palette. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================= -->
+    <!-- JavaScript Libraries -->
+    <!-- ========================= -->
+
+    <!-- === Link to Bootstrap JS === -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- === Links to jQery JS === -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

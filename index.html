@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Palette | MTM6201 Final - Marco Chan</title>
+    <!-- Link to reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Link to bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Link to animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link to style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts - Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/bc97a8c4ab.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- ========================= -->
+<!-- For Home Page -->
+<!-- ========================= -->
+<body class="page-home">
+    
+    <!-- === Skip links === -->
+    <a href="#about" class="skip-link">Skip to about us</a>
+    <a href="#service" class="skip-link">Skip to service button</a>
+
+    <!-- ========================= -->
+    <!-- Header Section -->
+    <!-- ========================= -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_color.png" alt="Image of logo">
+                </a>
+                <!-- === Hamburger menu === -->
+                <button class="navbar-toggler pushbar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- === Navbar (Bootstrap) === -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catering-events.html">Catering & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="online-reservation.html">Online Reservation</a>
+                        </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================= -->
+    <!-- Hero Section -->
+    <!-- ========================= -->
+    <div class="hero-home">
+        <div class="hero-background-home">
+            <img class="hero-image-home" 
+                 src="images/hero-image-720.jpg" 
+                 alt="Image for hero section with food"
+                 srcset="images/hero-image-720.jpg 720w,
+                         images/hero-image-1280.jpg 1280w,
+                         images/hero-image-1600.jpg 1600w,
+                         images/hero-image-1920.jpg 1920w"
+                 sizes="(max-width: 430px) 100vw,
+                        (max-width: 1024px) 100vw,
+                        (max-width: 1728px) 100vw,
+                        100vw">
+        </div>
+
+        <div class="hero-content-home d-flex justify-content-center align-items-center text-center">
+            <h1 class="colourShift">Fresh, Flavorful,<br>Plant-Based</h1>
+            <p class="hero-subheading">Experience vibrant, nourishing meals crafted from the finest plant-based ingredients for a truly satisfying dining experience.</p>
+            <a class="cta-button-menu" href="menu.html">MENU</a>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- About Section -->
+    <!-- ========================= -->
+    <section id="about" class="pt-4 py-3">
+        <div class="container">
+
+            <!-- === Heading - 1st row === -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading-about text-black text-start ms-3 me-3 mb-1 fw-bold">About</h2>
+                </div>
+            </div>
+
+            <!-- === Heading - 2nd row === -->
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading-about text-black text-start ms-3 me-3 fw-bold">Plant Palette</h1>
+                </div>
+            </div>
+    
+            <!-- === Content === -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="content-about text-black paragraph text-start ms-3 me-3 mt-2">Welcome to Plant Palette, Ottawa's top plant-based restaurant. We serve vibrant, nourishing meals made with fresh, locally sourced ingredients. Our mission is simple: delicious, sustainable food that supports both health and the environment.</p>
+                </div>
+            </div>
+    
+            <!-- === Heading (Rooted in Nature...) === -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="heading-about text-black text-start ms-3 mt-1 mb-1 mt-2 fw-bold">Rooted in Nature,</h2>
+                    <h2 class="heading-about text-black text-start ms-3 mb-1 mb-2 fw-bold">Crafted with Care</h2>
+                </div>
+            </div>
+    
+            <!-- === 5 cards === -->
+            <div class="row mt-3 mt-md-4 mt-lg-5">
+
+                <!-- === Card 1 - Passion === -->
+                <div class="col-12 col-md-2 col-lg-2 mb-4">
+                    <div class="card text-white border-0 rounded-3 p-2 h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-start">
+                            <i class="fa-solid fa-heart float-start me-2 fs-1"></i>
+                            <h5 class="card-title text-start mt-3 fw-bold">Passion</h5>
+                            <p class="card-text text-start text-white">We bring energy and excitement to everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Card 2 - Sustainability === -->
+                <div class="col-12 col-md-2 col-lg-2 mb-4">
+                    <div class="card text-white border-0 rounded-3 p-2 h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-start">
+                            <i class="fa-solid fa-leaf float-start me-2 fs-1"></i>
+                            <h5 class="card-title text-start mt-3 fw-bold">Sustainability</h5>
+                            <p class="card-text text-start text-white">We focus on eco-friendly practices to protect the planet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Card 3 - Authenticity === -->
+                <div class="col-12 col-md-2 col-lg-2 mb-4">
+                    <div class="card text-white border-0 rounded-3 p-2 h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-start">
+                            <i class="fa-solid fa-handshake float-start me-2 fs-1"></i>
+                            <h5 class="card-title text-start mt-3 fw-bold">Authenticity</h5>
+                            <p class="card-text text-start text-white">We believe in being real and building genuine connections.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Card 4 - Creativity === -->
+                <div class="col-12 col-md-2 col-lg-2 mb-4">
+                    <div class="card text-white border-0 rounded-3 p-2 h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-start">
+                            <i class="fa-solid fa-palette float-start me-2 fs-1"></i>
+                            <h5 class="card-title text-start mt-3 fw-bold">Creativity</h5>
+                            <p class="card-text text-start text-white">We innovate to create fresh and memorable experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Card 5 - Community === -->
+                <div class="col-12 col-md-2 col-lg-2 mb-4">
+                    <div class="card text-white border-0 rounded-3 p-2 h-100 d-flex flex-column">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-start">
+                            <i class="fa-solid fa-people-group float-start me-2 fs-1"></i>
+                            <h5 class="card-title text-start mt-3 fw-bold">Community</h5>
+                            <p class="card-text text-start text-white">We celebrate inclusivity and foster strong local connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Call to Action (CTA) Section -->
+    <!-- ========================= -->
+    <section id="service" class="cta-section">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+
+                <!-- === Table Reserve - link to booking form on Online Reservation page === -->
+                <div class="col-4">
+                    <div class="cta-image cta-image-1"></div>
+                    <a href="online-reservation.html#reservation-form" class="btn custom-btn">Table Reserve</a>
+                </div>
+
+                <!-- === See Menus - link to Our Menu on Menu page === -->
+                <div class="col-4">
+                    <div class="cta-image cta-image-2"></div>
+                    <a href="menu.html#menu-info" class="btn custom-btn">See Menus</a>
+                </div>
+
+                <!-- === Plan Your Events - link to Catering Menu on Catering & Events page === -->
+                <div class="col-4">
+                    <div class="cta-image cta-image-3"></div>
+                    <a href="catering-events.html#catering-menu" class="btn custom-btn">Plan Your Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer Section -->
+    <!-- ========================= -->
+    <div class="footer-container">
+        <footer class="footer custom-footer text-white text-center text-lg-start">
+            <div class="footer-gridContainer">
+                <div class="row footer-gridRow">
+
+                    <!-- === About Plant Palette === -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About Plant Palette</h5>
+                        <p>Plant Palette is Ottawa's premier plant-based restaurant, offering delicious, sustainable meals made from locally sourced ingredients. We celebrate vegetarian and vegan cuisine while supporting eco-friendly practices.</p>
+                    </div>
+            
+                    <!-- === Come Visit Us === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Come Visit Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span>Ottawa, ON, Canada</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>info@plantpalette.com</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>+1 (613) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- === Opening Hours === -->
+                    <div class="col-12 col-md-3 col-lg-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening Hours</h5>
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>11 a.m. - 10 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>11 a.m. - 9 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sun:</td>
+                                    <td>11 a.m. - 8 p.m.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footer-background text-white text-center p-3 px-lg-5">
+                <div class="mb-3">
+                    <a class="text-white" href="index.html">Home</a> |
+                    <a class="text-white" href="menu.html">Menu</a> |
+                    <a class="text-white" href="catering-events.html">Catering & Events</a> |
+                    <a class="text-white" href="online-reservation.html">Online Reservation</a>
+                </div>
+                
+                <p class="mb-0">&copy;2024 Plant Palette. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================= -->
+    <!-- JavaScript Libraries -->
+    <!-- ========================= -->
+    
+    <!-- === Link to Bootstrap JS === -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- === Links to jQery JS === -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

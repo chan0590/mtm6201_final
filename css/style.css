@@ -820,6 +820,8 @@ form .form-select {
 
 form button[type="submit"] {
     font-size: 1.2rem;
+    background-color: var(--burgundy-red);
+    color: var(--white);
 }
 
 
